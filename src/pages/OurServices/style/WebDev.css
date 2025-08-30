@@ -1,0 +1,49 @@
+.webdev-container {
+  padding: 40px;
+  text-align: center;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.webdev-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.webdev-subtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.webdev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.webdev-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.webdev-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.webdev-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.webdev-card-desc {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.5;
+}
