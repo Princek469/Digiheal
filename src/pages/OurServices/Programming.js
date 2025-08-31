@@ -34,7 +34,7 @@ function Programming() {
             <div className="programming-icon">{service.icon}</div>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <a href={service.link} className="programming-more-btn">More Information</a>
+            <a href="#" className="programming-more-btn">More Information</a>
           </div>
         ))}
       </div>
@@ -46,7 +46,7 @@ function Programming() {
           <div className="programming-icon">{services[currentIndex].icon}</div>
           <h2>{services[currentIndex].title}</h2>
           <p>{services[currentIndex].description}</p>
-          <a href={services[currentIndex].link} className="programming-more-btn">More Information</a>
+          <a href="#" className="programming-more-btn">More Information</a>
         </div>
         <button onClick={nextSlide} className="programming-btn">&#10095;</button>
       </div>

@@ -33,7 +33,7 @@ function WebDev() {
             <div className="webdev-icon">{service.icon}</div>
             <h2 className="webdev-card-title">{service.title}</h2>
             <p className="webdev-card-desc">{service.description}</p>
-            <a href={service.link} className="webdev-more-btn">More Information</a>
+            <a href="#" className="webdev-more-btn">More Information</a>
           </div>
         ))}
       </div>
@@ -45,7 +45,7 @@ function WebDev() {
           <div className="webdev-icon">{services[currentIndex].icon}</div>
           <h2 className="webdev-card-title">{services[currentIndex].title}</h2>
           <p className="webdev-card-desc">{services[currentIndex].description}</p>
-          <a href={services[currentIndex].link} className="webdev-more-btn">More Information</a>
+          <a href="#" className="webdev-more-btn">More Information</a>
         </div>
         <button onClick={nextSlide} className="webdev-btn">&#10095;</button>
       </div>

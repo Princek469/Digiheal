@@ -58,7 +58,7 @@ function AI() {
             <div className="ai-icon">{service.icon}</div>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <a href={service.link} className="ai-more-btn">More Information</a>
+            <a href="#" className="ai-more-btn">More Information</a>
           </div>
         ))}
       </div>
@@ -70,7 +70,7 @@ function AI() {
           <div className="ai-icon">{services[currentIndex].icon}</div>
           <h2>{services[currentIndex].title}</h2>
           <p>{services[currentIndex].description}</p>
-          <a href={services[currentIndex].link} className="ai-more-btn">More Information</a>
+          <a href="#" className="ai-more-btn">More Information</a>
         </div>
         <button onClick={nextSlide} className="ai-btn">&#10095;</button>
       </div>

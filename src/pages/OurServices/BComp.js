@@ -48,7 +48,7 @@ function BComp() {
             <div className="bcomp-icon">{service.icon}</div>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <a href={service.link} className="bcomp-more-btn">More Information</a>
+            <a href="#" className="bcomp-more-btn">More Information</a>
           </div>
         ))}
       </div>
@@ -60,7 +60,7 @@ function BComp() {
           <div className="bcomp-icon">{services[currentIndex].icon}</div>
           <h2>{services[currentIndex].title}</h2>
           <p>{services[currentIndex].description}</p>
-          <a href={services[currentIndex].link} className="bcomp-more-btn">More Information</a>
+          <a href="#" className="bcomp-more-btn">More Information</a>
         </div>
         <button onClick={nextSlide} className="bcomp-btn">&#10095;</button>
       </div>
