@@ -101,4 +101,8 @@ background: #9c4100;
     max-width: 80%;
     padding: 25px;
   }
+  .bcomp-more-btn{
+    padding: 10px 9px;
+    font-size: 13px;
+  }
 }

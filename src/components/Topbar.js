@@ -9,7 +9,7 @@ import {
 export default function Topbar() {
 
   function handleSocialMedia(){
-    alert("Social Media Link Creation is in progress");
+    alert("Social Media Link Creation is in progress !");
   }
 
   return (

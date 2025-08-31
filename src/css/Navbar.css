@@ -64,7 +64,7 @@
   background: #fff;
   border: 1px solid #eee;
   border-radius: 4px;
-  padding: 6px 0;
+  /* padding: 0px 0; */
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   z-index: 1000;
 }
@@ -130,6 +130,7 @@
   .navbar ul li {
     width: 100%;
     border-bottom: 1px solid #f1f1f1;
+    
   }
 
   .navbar ul li a,
@@ -367,9 +368,16 @@
 
 .nested-nested-list{
   left: -246px !important;
-    top: 16px !important;
+    top: -11px !important;
 }
 
 .list{
   left: -45px !important;
+}
+
+@media screen and (min-width: 992px){
+  .navbar ul li {
+  position: relative;
+  text-align: center;
+}
 }
