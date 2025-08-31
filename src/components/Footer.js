@@ -13,6 +13,14 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { ref, push, set } from "firebase/database";
 
 function Footer() {
+
+
+  //Socila Media linls
+  function handleSocialMedia(){
+    alert('Social Media Link Creation is in Progress!')
+  }
+
+
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
@@ -89,9 +97,9 @@ function Footer() {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-links">
-            <a href="#instagram" className="instagram"><FaInstagram /></a>
-            <a href="#twitter" className="twitter"><FaTwitter /></a>
-            <a href="#linkedin" className="linkedin"><FaLinkedinIn /></a>
+            <a href="#" onClick={handleSocialMedia} className="instagram"><FaInstagram /></a>
+            <a href="#" onClick={handleSocialMedia} className="twitter"><FaTwitter /></a>
+            <a href="#" onClick={handleSocialMedia} className="linkedin"><FaLinkedinIn /></a>
           </div>
         </div>
 

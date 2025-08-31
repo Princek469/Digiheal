@@ -7,6 +7,11 @@ import {
 
 
 export default function Topbar() {
+
+  function handleSocialMedia(){
+    alert("Social Media Link Creation is in progress");
+  }
+
   return (
     <div className="topbar">
       <div className="contact-info">
@@ -14,9 +19,9 @@ export default function Topbar() {
         <span><i className="fas fa-envelope"></i>INFO@DIGIHEALTECHNOLOGIES.COM</span>
       </div>
       <div className="social-links">
-        <a href="#facebook" className="facebook"><FaInstagram /></a>
-        <a href="#twitter" className="twitter"><FaTwitter /></a>
-        <a href="#linkedin" className="linkedin"><FaLinkedinIn /></a>
+        <a href="#" className="instagram" onClick={handleSocialMedia}><FaInstagram /></a>
+        <a href="#" className="twitter" onClick={handleSocialMedia}><FaTwitter /></a>
+        <a href="#" className="linkedin" onClick={handleSocialMedia}><FaLinkedinIn /></a>
       </div>
     </div>
   );

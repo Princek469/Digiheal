@@ -70,6 +70,39 @@ export default function About() {
           </div>
         </div>
       </section>
+
+
+       <section className="meet-directors">
+        <h2>Meet Our Directors</h2>
+        <div className="director-cards">
+          <div className="director-card">
+            <div className="director-image">
+              {/* <img src="/images/director1-placeholder.webp" alt="Director 1" /> */}
+            </div>
+            <div className="director-info">
+              <h4>Soni Mishra</h4>
+              <p>Director 1</p>
+              {/* <p>
+                John leads the company with a vision for innovation and excellence,
+                ensuring that clients receive top-quality solutions.
+              </p> */}
+            </div>
+          </div>
+          <div className="director-card">
+            <div className="director-image">
+              {/* <img src="/images/director2-placeholder.webp" alt="Director 2" /> */}
+            </div>
+            <div className="director-info">
+              <h4>Sempi Jha</h4>
+              <p>Director 2</p>
+              {/* <p>
+                Jane oversees all technology strategies, driving innovation and
+                implementing cutting-edge solutions for our clients.
+              </p> */}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

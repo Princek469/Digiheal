@@ -92,7 +92,7 @@ export default function Contact() {
           {/* Right Side - Form */}
           <div className="contact-form-wrapper">
             <div className="form-header">
-              <h3>Tell Us About Your Project</h3>
+              <h3>Do You Have Any Query ?</h3>
             </div>
 
             <form className="contact-form" onSubmit={handleSubmit}>

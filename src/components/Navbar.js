@@ -85,6 +85,7 @@ export default function Navbar() {
                       <li><a href="/programmingCoding">Programming & Coding</a></li>
                       <li><a href="/webDevelopment">Web Development</a></li>
                       <li><a href="/integration">Integration Technologies</a></li>
+                      <li><a href="/artificialIntelligence">Artificial Intelligence</a></li>
                     </ul>
                   </li>
                 </ul>

@@ -1,34 +1,34 @@
 /* Container */
-.webdev-container {
+.integration-container {
   padding: 60px 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   text-align: center;
-  background: #f9fafb;
+  background: #f0f4f8;
   border-radius: 12px;
 }
 
-.webdev-title {
+.integration-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #111827;
+  color: #1f2937;
 }
 
-.webdev-subtitle {
-  color: #6b7280;
+.integration-subtitle {
+  color: #4b5563;
   margin-bottom: 40px;
   font-size: 1.1rem;
 }
 
 /* Desktop Grid */
-.webdev-grid {
+.integration-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
 }
 
-.webdev-card {
+.integration-card {
   background: #ffffff;
   border-radius: 15px;
   padding: 30px 25px;
@@ -36,46 +36,30 @@
   max-width: 320px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #1f2937;
 }
 
-.webdev-card:hover {
+.integration-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Icons */
-.webdev-icon {
+.integration-icon {
   font-size: 3rem;
   color: #f97316;
   margin-bottom: 15px;
 }
 
-/* More Information button */
-.webdev-more-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-   background: #ef731a;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-
-.webdev-more-btn:hover {
-  background: #f96b06;
-}
-
 /* Mobile Carousel */
-.webdev-carousel {
+.integration-carousel {
   display: none;
   align-items: center;
   justify-content: center;
 }
 
-.webdev-btn {
-  background: #f97316;
+.integration-btn {
+  background: #10b981;
   color: #fff;
   border: none;
   padding: 12px 18px;
@@ -86,19 +70,37 @@
   transition: background 0.3s;
 }
 
-.webdev-btn:hover {
-  background: #9c4100;
+.integration-btn:hover {
+  background: #059669;
 }
 
 @media screen and (max-width: 768px) {
-  .webdev-grid {
+  .integration-grid {
     display: none;
   }
-  .webdev-carousel {
+  .integration-carousel {
     display: flex;
   }
-  .webdev-card {
+  .integration-card {
     max-width: 80%;
     padding: 25px;
   }
+}
+
+
+/* More Information button */
+.integration-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+    background: #ef731a;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.integration-more-btn:hover {
+  background: #9c4100;
 }

@@ -33,6 +33,7 @@ import Programming from "./pages/OurServices/Programming";
 import ItConsul from "./pages/OurServices/ItConsul";
 import SoftDevSupp from "./pages/OurServices/SoftDevSupp";
 import NetSolu from "./pages/OurServices/NetSolu";
+import AI from "./pages/OurServices/AI";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +50,8 @@ const router = createBrowserRouter([
       { path: "programmingCoding", element: <Programming /> },
       { path: "itConsulting", element: <ItConsul /> },
       { path: "softwareDev", element: <SoftDevSupp /> },
-      { path: "netSolu", element: <NetSolu /> }
+      { path: "netSolu", element: <NetSolu /> },
+      { path: "artificialIntelligence", element: <AI /> },
     ],
   },
 ]);

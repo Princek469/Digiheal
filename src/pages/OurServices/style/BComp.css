@@ -1,5 +1,5 @@
 /* Container */
-.webdev-container {
+.bcomp-container {
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
@@ -8,27 +8,27 @@
   border-radius: 12px;
 }
 
-.webdev-title {
+.bcomp-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #111827;
 }
 
-.webdev-subtitle {
+.bcomp-subtitle {
   color: #6b7280;
   margin-bottom: 40px;
   font-size: 1.1rem;
 }
 
 /* Desktop Grid */
-.webdev-grid {
+.bcomp-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
 }
 
-.webdev-card {
+.bcomp-card {
   background: #ffffff;
   border-radius: 15px;
   padding: 30px 25px;
@@ -38,20 +38,20 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.webdev-card:hover {
+.bcomp-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* Icons */
-.webdev-icon {
+.bcomp-icon {
   font-size: 3rem;
   color: #f97316;
   margin-bottom: 15px;
 }
 
 /* More Information button */
-.webdev-more-btn {
+.bcomp-more-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -63,19 +63,19 @@
   transition: background 0.3s;
 }
 
-.webdev-more-btn:hover {
-  background: #f96b06;
+.bcomp-more-btn:hover {
+background: #9c4100;
 }
 
 /* Mobile Carousel */
-.webdev-carousel {
+.bcomp-carousel {
   display: none;
   align-items: center;
   justify-content: center;
 }
 
-.webdev-btn {
-  background: #f97316;
+.bcomp-btn {
+ background: #f97316;
   color: #fff;
   border: none;
   padding: 12px 18px;
@@ -86,18 +86,18 @@
   transition: background 0.3s;
 }
 
-.webdev-btn:hover {
-  background: #9c4100;
+.bcomp-btn:hover {
+  background: #2563eb;
 }
 
 @media screen and (max-width: 768px) {
-  .webdev-grid {
+  .bcomp-grid {
     display: none;
   }
-  .webdev-carousel {
+  .bcomp-carousel {
     display: flex;
   }
-  .webdev-card {
+  .bcomp-card {
     max-width: 80%;
     padding: 25px;
   }

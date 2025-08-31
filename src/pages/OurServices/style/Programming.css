@@ -1,34 +1,34 @@
 /* Container */
-.webdev-container {
+.programming-container {
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  background: #f9fafb;
+  background: #fefefe;
   border-radius: 12px;
 }
 
-.webdev-title {
+.programming-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #111827;
+  color: #1f2937;
 }
 
-.webdev-subtitle {
+.programming-subtitle {
   color: #6b7280;
   margin-bottom: 40px;
   font-size: 1.1rem;
 }
 
 /* Desktop Grid */
-.webdev-grid {
+.programming-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
 }
 
-.webdev-card {
+.programming-card {
   background: #ffffff;
   border-radius: 15px;
   padding: 30px 25px;
@@ -38,20 +38,20 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.webdev-card:hover {
+.programming-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* Icons */
-.webdev-icon {
+.programming-icon {
   font-size: 3rem;
   color: #f97316;
   margin-bottom: 15px;
 }
 
 /* More Information button */
-.webdev-more-btn {
+.programming-more-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -63,18 +63,18 @@
   transition: background 0.3s;
 }
 
-.webdev-more-btn:hover {
-  background: #f96b06;
+.programming-more-btn:hover {
+  background: #9c4100;
 }
 
 /* Mobile Carousel */
-.webdev-carousel {
+.programming-carousel {
   display: none;
   align-items: center;
   justify-content: center;
 }
 
-.webdev-btn {
+.programming-btn {
   background: #f97316;
   color: #fff;
   border: none;
@@ -86,18 +86,18 @@
   transition: background 0.3s;
 }
 
-.webdev-btn:hover {
-  background: #9c4100;
+.programming-btn:hover {
+  background: #ea580c;
 }
 
 @media screen and (max-width: 768px) {
-  .webdev-grid {
+  .programming-grid {
     display: none;
   }
-  .webdev-carousel {
+  .programming-carousel {
     display: flex;
   }
-  .webdev-card {
+  .programming-card {
     max-width: 80%;
     padding: 25px;
   }
