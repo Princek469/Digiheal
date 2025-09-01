@@ -81,7 +81,7 @@ export default function About() {
             </div>
             <div className="director-info">
               <h4>Soni Mishra</h4>
-              <p>Director 1</p>
+              <p>Director</p>
               {/* <p>
                 John leads the company with a vision for innovation and excellence,
                 ensuring that clients receive top-quality solutions.
@@ -94,7 +94,7 @@ export default function About() {
             </div>
             <div className="director-info">
               <h4>Sempi Jha</h4>
-              <p>Director 2</p>
+              <p>Director</p>
               {/* <p>
                 Jane oversees all technology strategies, driving innovation and
                 implementing cutting-edge solutions for our clients.

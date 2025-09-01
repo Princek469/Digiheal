@@ -53,7 +53,7 @@ function NetSolu() {
           transfer, minimize downtime, and protect against cyber threats.
           Partner with us to make your business truly connected.
         </p>
-        <button className="btn">Contact Us</button>
+        <a href="/contact" className="btn">Contact Us</a>
       </div>
     </div>
   );

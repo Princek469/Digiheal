@@ -229,6 +229,7 @@
   .director-cards {
     flex-direction: column;
     gap: 20px;
+    flex: 1 1 114px;
   }
 
   .director-info h4 {

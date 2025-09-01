@@ -53,7 +53,7 @@ export default function Contact() {
       "e7Z_eZtSqMy9sS1mG"    // 🔹 replace with your EmailJS Public Key
     );
 
-    alert("Message submitted & email sent successfully! ✅");
+    alert("Message submitted successfully! ✅");
     setForm({ fname: "", email: "", message: "" }); 
   } catch (error) {
     console.error("Error: ", error);

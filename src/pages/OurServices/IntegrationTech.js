@@ -23,7 +23,7 @@ function IntegrationTech() {
       link: "/ibm-itx"
     },
     { 
-      title: "IBM Sterlink Integrator", 
+      title: "IBM Sterling Integrator", 
       description: "Integration with IBM middleware.", 
       icon: <FaCogs />,
       link: "/ibm-sterlink"

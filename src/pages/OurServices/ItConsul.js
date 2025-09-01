@@ -60,7 +60,7 @@ function ItConsul() {
           Need expert advice to transform your IT infrastructure and strategy?
           Our consulting experts are here to guide you every step of the way.
         </p>
-        <button className="btn">Contact Us</button>
+        <a href="/contact" className="btn">Contact Us</a>
       </section>
     </div>
   );

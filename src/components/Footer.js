@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 // Firebase Imports
 import { db, rtdb } from "../firebase";
@@ -21,7 +22,7 @@ function Footer() {
   }
 
 
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ fname: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
   // Handle input changes
@@ -38,23 +39,37 @@ function Footer() {
     try {
       // ✅ Save to Firestore
       await addDoc(collection(db, "footerContacts"), {
-        name: form.name,
+        name: form.fname,
         email: form.email,
         message: form.message,
         createdAt: Timestamp.now(),
       });
 
+      
+
       // ✅ Save to Realtime Database
       const newRef = push(ref(rtdb, "footerContacts"));
       await set(newRef, {
-        name: form.name,
+        name: form.fname,
         email: form.email,
         message: form.message,
         createdAt: new Date().toISOString(),
       });
 
+        await emailjs.send(
+      "service_43t3aue",   // 🔹 replace with your EmailJS Service ID
+      "template_gso6tdt",  // 🔹 replace with your EmailJS Template ID
+      {
+        fname: form.fname,
+    email: form.email,
+    message: form.message,
+    time: new Date().toLocaleString(),
+      },
+      "e7Z_eZtSqMy9sS1mG"    // 🔹 replace with your EmailJS Public Key
+    );
+
       alert("✅ Message submitted successfully!");
-      setForm({ name: "", email: "", message: "" }); // Reset form
+      setForm({ fname: "", email: "", message: "" }); // Reset form
     } catch (error) {
       console.error("Error saving footer form: ", error);
       alert("❌ Something went wrong, try again.");
@@ -112,7 +127,7 @@ function Footer() {
                 type="text"
                 name="name"
                 placeholder="Enter Name"
-                value={form.name}
+                value={form.fname}
                 onChange={handleChange}
                 required
               />

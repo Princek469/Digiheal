@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 export default function Home() {
   const images = [
     "/images/banner-7.jpg",
-    "/images/customer-support.webp",
     "/images/banner-4.jpg",
     "/images/It-support.jpg"
   ];
