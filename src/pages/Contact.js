@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import "../css/Contact.css";
+import emailjs from "emailjs-com";
+
 
 // Firebase Imports
 import { db, rtdb } from "../firebase"; 
@@ -17,36 +19,50 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      // ✅ Save to Firestore
-      await addDoc(collection(db, "contacts"), {
+  try {
+    // ✅ Save to Firestore
+    await addDoc(collection(db, "contacts"), {
+      fname: form.fname,
+      email: form.email,
+      message: form.message,
+      createdAt: Timestamp.now(),
+    });
+
+    // ✅ Save to Realtime Database
+    const newRef = push(ref(rtdb, "contacts"));
+    await set(newRef, {
+      fname: form.fname,
+      email: form.email,
+      message: form.message,
+      createdAt: new Date().toISOString(),
+    });
+
+    // ✅ Send Email via EmailJS
+    await emailjs.send(
+      "service_43t3aue",   // 🔹 replace with your EmailJS Service ID
+      "template_gso6tdt",  // 🔹 replace with your EmailJS Template ID
+      {
         fname: form.fname,
-        email: form.email,
-        message: form.message,
-        createdAt: Timestamp.now(),
-      });
+    email: form.email,
+    message: form.message,
+    time: new Date().toLocaleString(),
+      },
+      "e7Z_eZtSqMy9sS1mG"    // 🔹 replace with your EmailJS Public Key
+    );
 
-      // ✅ Save to Realtime Database
-      const newRef = push(ref(rtdb, "contacts"));
-      await set(newRef, {
-        fname: form.fname,
-        email: form.email,
-        message: form.message,
-        createdAt: new Date().toISOString(),
-      });
+    alert("Message submitted & email sent successfully! ✅");
+    setForm({ fname: "", email: "", message: "" }); 
+  } catch (error) {
+    console.error("Error: ", error);
+    alert("❌ Something went wrong, try again.");
+  }
 
-      alert("Message submitted successfully!✅");
-      setForm({ fname: "", email: "", message: "" }); 
-    } catch (error) {
-      console.error("Error saving message: ", error);
-      alert("❌ Something went wrong, try again.");
-    }
+  setLoading(false);
+};
 
-    setLoading(false);
-  };
 
   return (
     <>
