@@ -75,7 +75,7 @@
 }
 
 .ai-btn {
-  background: #6366f1;
+   background: #f97316;
   color: #fff;
   border: none;
   padding: 12px 18px;
@@ -87,7 +87,7 @@
 }
 
 .ai-btn:hover {
-  background: #4f46e5;
+  background: #9c4100;
 }
 
 @media screen and (max-width: 768px) {

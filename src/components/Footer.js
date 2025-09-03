@@ -125,7 +125,7 @@ function Footer() {
             <div className="form-row">
               <input
                 type="text"
-                name="name"
+                name="fname"
                 placeholder="Enter Name"
                 value={form.fname}
                 onChange={handleChange}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 export default function Navbar() {
@@ -50,7 +49,7 @@ export default function Navbar() {
       <div className={`navbar ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/" onClick={handleLinkClick}>Home</Link>
+            <a href="/" onClick={handleLinkClick}>Home</a>
           </li>
 
           {/* About */}
@@ -108,7 +107,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link to="/contact" onClick={handleLinkClick}>Contact Us</Link>
+            <a href="/contact" onClick={handleLinkClick}>Contact Us</a>
           </li>
         </ul>
       </div>
