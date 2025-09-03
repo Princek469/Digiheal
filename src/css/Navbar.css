@@ -4,6 +4,29 @@
   
 
 /* ================== LOGO ================== */
+.navbar-container {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 47px;
+}
+
+/* Brand/logo */
+.brand img {
+  max-height: 60px;   /* ✅ fits inside navbar */
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0;          /* ✅ remove offsets */
+}
 
 /* ================== HAMBURGER (MOBILE) ================== */
 .hamburger {
@@ -163,29 +186,7 @@
   }
 }
 /* ================== NAVBAR BASE ================== */
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  padding: 10px 20px;
-  position: fixed;
-  top: 48px;
-  left: 0;
-  height: 60px;
-  width: 100%;
-  z-index: 999;
-  border-bottom: 1px solid #e5e7eb;
-}
 
-/* ================== LOGO ================== */
-.brand img {
- height: 265px;
-    width: auto;
-    padding: 33px 20px;
-    margin-top: 12px;
-    margin-left: -34px;
-}
 
 /* ================== HAMBURGER (MOBILE) ================== */
 .hamburger {
@@ -288,14 +289,15 @@
 
   .navbar-container{
     top: 27px;
-    height: 80px;
+    height: 69px;
+    padding: 0px 17px;
   }
 
-  .brand img {height: 240px;
-    /* position: absolute; */
-    margin-left: -32px;
-    padding: 16px 11px;
-    margin-top: 12px; }
+  .brand img {max-height: 83px;
+        /* position: absolute; */
+        margin-left: -19px;
+        padding: 16px 11px;
+        margin-top: 5px; }
 
   .navbar {
     position: absolute;
@@ -368,7 +370,7 @@
 
 .nested-nested-list{
   left: -246px !important;
-    top: -11px !important;
+    top: 16px !important;
 }
 
 .list{

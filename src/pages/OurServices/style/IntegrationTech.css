@@ -59,7 +59,7 @@
 }
 
 .integration-btn {
-  background: #10b981;
+  background: #f97316;
   color: #fff;
   border: none;
   padding: 12px 18px;
@@ -71,7 +71,7 @@
 }
 
 .integration-btn:hover {
-  background: #059669;
+  background: #fb6d08;
 }
 
 @media screen and (max-width: 768px) {

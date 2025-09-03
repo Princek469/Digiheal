@@ -16,7 +16,7 @@ const SoftDevSupp = () => {
           secure, and high-performance products.
         </p>
         <img
-          src="https://www.orientsoftware.com/Themes/Content/Images/blog/2023-04-27/software-development-partner.jpg"
+          src="/images/software-development-and-support.jpg"
           alt="Software development"
           className="section-img"
         />
@@ -26,7 +26,9 @@ const SoftDevSupp = () => {
       <section className="section">
         <h2 className="subtitle">🛠 Our Services</h2>
         <div className="card-grid">
-          <div className="card">Custom Web & Mobile Application Development</div>
+          <div className="card">
+            Custom Web & Mobile Application Development
+          </div>
           <div className="card">Cloud Solutions & Migration</div>
           <div className="card">Software Testing & Quality Assurance</div>
           <div className="card">Application Maintenance & Support</div>
@@ -36,95 +38,133 @@ const SoftDevSupp = () => {
       </section>
 
       {/* Technologies */}
-   <section className="section">
-  <h2 className="subtitle">⚙️ Technologies We Use</h2>
-  <div className="tech-grid">
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-        alt="React.js"
-      />
-      <p>React.js</p>
-    </div>
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-        alt="Node.js"
-      />
-      <p>Node.js</p>
-    </div>
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-        alt="Python"
-      />
-      <p>Python</p>
-    </div>
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-        alt="Java"
-      />
-      <p>Java</p>
-    </div>
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
-        alt="AWS"
-      />
-      <p>AWS & Azure</p>
-    </div>
-    <div className="tech-item">
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-        alt="MongoDB"
-      />
-      <p>MySQL / MongoDB</p>
-    </div>
+      <section className="section">
+        <h2 className="subtitle">⚙️ Technologies We Use</h2>
+        <div className="tech-grid">
+          <div className="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React.js"
+            />
+            <p>React.js</p>
+          </div>
+          <div className="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <p>Node.js</p>
+          </div>
+          <div className="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python"
+            />
+            <p>Python</p>
+          </div>
+          <div className="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java"
+            />
+            <p>Java</p>
+          </div>
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+              alt="AWS"
+              height="60"
+            />
+            <p>AWS & Azure</p>
+          </div>
+          <div className="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+            />
+            <p>MySQL / MongoDB</p>
+          </div>
 
-    {/* New Technologies */}
-    <div className="tech-item">
-      <img
-        src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg"
-        alt="SAP PI/PO"
-      />
-      <p>SAP PI/PO</p>
-    </div>
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+              alt="SAP BTP"
+            />
+            <p>SAP BTP</p>
+          </div>
 
-    <div className="tech-item">
-      <img
-        src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg"
-        alt="SAP CPI"
-      />
-      <p>SAP CPI</p>
-    </div>
+          {/* Existing */}
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+              alt="SAP PI/PO"
+            />
+            <p>SAP PI/PO</p>
+          </div>
 
-    <div className="tech-item">
-      <img
-        src="https://companieslogo.com/img/orig/IBM-3c0c9f9e.png?t=1721743609"
-        alt="IBM ITX"
-      />
-      <p>IBM ITX</p>
-    </div>
+           <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+              alt="SAP CPI"
+            />
+            <p>SAP Integration Suite</p>
+          </div>
 
-    <div className="tech-item">
-      <img
-        src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg"
-        alt="Salesforce CRM"
-      />
-      <p>Salesforce CRM</p>
-    </div>
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+              alt="SAP MII"
+            />
+            <p>SAP MII</p>
+          </div>
 
-    <div className="tech-item">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/906/906349.png"
-        alt="EDI"
-      />
-      <p>EDI (Electronic Data Interchange)</p>
-    </div>
-  </div>
-</section>
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+              alt="SAP MDK"
+            />
+            <p>SAP MDK</p>
+          </div>
 
+         
+
+          <div className="tech-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+              alt="IBM ITX"
+            />
+            <p>IBM ITX</p>
+          </div>
+
+          <div className="tech-item">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg"
+              alt="Salesforce CRM"
+            />
+            <p>Salesforce CRM</p>
+          </div>
+
+          <div className="tech-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/906/906349.png"
+              alt="EDI"
+            />
+            <p>EDI (Electronic Data Interchange)</p>
+          </div>
+
+            <div className="tech-item">
+          <img src="/images/mule-soft.png" alt="MuleSoft" height="60" />
+          <p>MuleSoft</p>
+        </div>
+        <div className="tech-item">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/boomi-1.svg"
+            alt="Dell Boomi"
+          />
+          <p>Dell Boomi</p>
+        </div>
+        </div>
+      </section>
 
       {/* Contact */}
       <section className="section contact">
@@ -133,7 +173,9 @@ const SoftDevSupp = () => {
           Looking for a reliable partner to build your next software project? 🚀
           Reach out to us for consultation and tailored solutions.
         </p>
-        <a href="/contact" className="btn">Contact Us</a>
+        <a href="/contact" className="btn">
+          Contact Us
+        </a>
       </section>
     </div>
   );

@@ -33,9 +33,9 @@ export default function Navbar() {
     <nav className="navbar-container">
       {/* Logo */}
       <div className="brand">
-        <Link to="/" onClick={handleLinkClick}>
+        <a href="/">
           <img src="/images/logo.png" alt="Logo" />
-        </Link>
+        </a>
       </div>
 
       {/* Hamburger */}
@@ -71,6 +71,18 @@ export default function Navbar() {
               Our Services <span className="arrow">▼</span>
             </button>
             <ul className={`${openMenus["services"] ? "open" : ""} list`}>
+
+             <li>
+                <button type="button" onClick={() => toggleMenu("it")}>
+                  IT Services ▶
+                </button>
+                <ul className={`${openMenus["it"] ? "open" : ""} nested-nested-list`}>
+                 <li><a href="/softwareDev">Software Development & Support</a></li>
+                  <li><a href="/itConsulting">IT Consulting</a></li>
+                  <li><a href="/netSolu">Network Solutions</a></li>
+                </ul>
+              </li>
+
               <li>
                 <button type="button" onClick={() => toggleMenu("learning")}>
                   Learning & Development ▶
@@ -91,16 +103,7 @@ export default function Navbar() {
                 </ul>
               </li>
 
-              <li>
-                <button type="button" onClick={() => toggleMenu("it")}>
-                  IT Services ▶
-                </button>
-                <ul className={`${openMenus["it"] ? "open" : ""} nested-nested-list`}>
-                 <li><a href="/softwareDev">Software Development & Support</a></li>
-                  <li><a href="/itConsulting">IT Consulting</a></li>
-                  <li><a href="/netSolu">Network Solutions</a></li>
-                </ul>
-              </li>
+             
             </ul>
           </li>
 
